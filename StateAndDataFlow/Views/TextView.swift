@@ -13,11 +13,14 @@ struct TextView: View {
     
     var body: some View {
         Group {
-            Text("\(currentText.count)")
-                .foregroundColor(currentText.count <= 2 ? .red : .blue )
+            Text("\(currentText.count <= 0 ? "" : "\(currentText.count)")")
+                .foregroundColor( currentText.count <= 2 ? .red : .blue )
         }
     }
 }
+
+// Да, я решил поучиться использовать тернарный оператор. Результат хороший,
+// но выглядит страшно
 
 
 struct TextView_Previews: PreviewProvider {

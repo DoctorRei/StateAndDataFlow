@@ -14,9 +14,7 @@ struct LoginView: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("Enter your name", text: $name)
-                    .multilineTextAlignment(.center)
-                Text("\(name.count)")
+                TextFieldView(name: $name)
             }
             Button(action: login) {
                 HStack {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-    //MARK: - State values
+    //MARK: - Private values
     
     @State private var buttonState = true
     @State private var name = ""
@@ -51,7 +51,6 @@ struct LoginView: View {
         if !name.isEmpty {
             userSettings.username = name
             userSettings.isLoggedIn.toggle()
-            
         }
     }
 }

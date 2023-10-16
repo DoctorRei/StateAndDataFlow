@@ -15,6 +15,7 @@
 		A8B1C6F029F9A7B200967803 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1C6EF29F9A7B200967803 /* LoginView.swift */; };
 		A8B1C6F229F9A89300967803 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1C6F129F9A89300967803 /* UserSettings.swift */; };
 		A8B1C6F429F9A97600967803 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1C6F329F9A97600967803 /* RootView.swift */; };
+		E98003072ADDA5E200E6974E /* LogOutButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98003062ADDA5E200E6974E /* LogOutButtonView.swift */; };
 		E9809FE12ADC2A24009800A8 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9809FE02ADC2A24009800A8 /* TextView.swift */; };
 		E996A80A2ADD4CF600AF6095 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996A8092ADD4CF600AF6095 /* TextFieldView.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		A8B1C6EF29F9A7B200967803 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A8B1C6F129F9A89300967803 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		A8B1C6F329F9A97600967803 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		E98003062ADDA5E200E6974E /* LogOutButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutButtonView.swift; sourceTree = "<group>"; };
 		E9809FE02ADC2A24009800A8 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		E996A8092ADD4CF600AF6095 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,11 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				A8B1C6DF29F9881C00967803 /* StateAndDataFlowApp.swift */,
-				A8B1C6E129F9881C00967803 /* ContentView.swift */,
-				A8B1C6F129F9A89300967803 /* UserSettings.swift */,
+				A8B1C6F329F9A97600967803 /* RootView.swift */,
 				E9809FE22ADC2A3D009800A8 /* Views */,
-				A8B1C6E329F9881D00967803 /* Assets.xcassets */,
+				E980030C2ADDAC7F00E6974E /* StorageManager */,
 				A8B1C6E529F9881D00967803 /* Preview Content */,
+				A8B1C6E329F9881D00967803 /* Assets.xcassets */,
 			);
 			path = StateAndDataFlow;
 			sourceTree = "<group>";
@@ -81,14 +83,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E9809FE22ADC2A3D009800A8 /* Views */ = {
+		E980030C2ADDAC7F00E6974E /* StorageManager */ = {
 			isa = PBXGroup;
 			children = (
-				A8B1C6F329F9A97600967803 /* RootView.swift */,
-				A8B1C6EF29F9A7B200967803 /* LoginView.swift */,
+				A8B1C6F129F9A89300967803 /* UserSettings.swift */,
+			);
+			path = StorageManager;
+			sourceTree = "<group>";
+		};
+		E980030D2ADDACD800E6974E /* ToolsViews */ = {
+			isa = PBXGroup;
+			children = (
 				E9809FE02ADC2A24009800A8 /* TextView.swift */,
 				E996A8092ADD4CF600AF6095 /* TextFieldView.swift */,
 				A8B1C6ED29F9A14400967803 /* TimeCounter.swift */,
+				E98003062ADDA5E200E6974E /* LogOutButtonView.swift */,
+			);
+			path = ToolsViews;
+			sourceTree = "<group>";
+		};
+		E9809FE22ADC2A3D009800A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8B1C6E129F9881C00967803 /* ContentView.swift */,
+				A8B1C6EF29F9A7B200967803 /* LoginView.swift */,
+				E980030D2ADDACD800E6974E /* ToolsViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +188,7 @@
 				E9809FE12ADC2A24009800A8 /* TextView.swift in Sources */,
 				A8B1C6F029F9A7B200967803 /* LoginView.swift in Sources */,
 				A8B1C6F229F9A89300967803 /* UserSettings.swift in Sources */,
+				E98003072ADDA5E200E6974E /* LogOutButtonView.swift in Sources */,
 				A8B1C6E029F9881C00967803 /* StateAndDataFlowApp.swift in Sources */,
 				E996A80A2ADD4CF600AF6095 /* TextFieldView.swift in Sources */,
 			);

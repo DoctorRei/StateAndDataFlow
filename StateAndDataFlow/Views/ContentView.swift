@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    //MARK: - Private values
+    
     @StateObject private var timer = TimeCounter()
     @EnvironmentObject private var userSettings: UserSettings
+    
+    //MARK: - Content
     
     var body: some View {
         VStack {
@@ -22,6 +27,7 @@ struct ContentView: View {
             Spacer()
             
             ButtonView(timer: timer)
+            LogOutButtonView()
             
             Spacer()
         }
@@ -29,12 +35,7 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .environmentObject(UserSettings())
-    }
-}
+
 
 struct ButtonView: View {
     @ObservedObject var timer: TimeCounter
@@ -54,5 +55,14 @@ struct ButtonView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(.black, lineWidth: 4)
         )
+    }
+}
+
+//MARK: - Canvas
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(UserSettings())
     }
 }

@@ -23,7 +23,9 @@ func buttonEnabled() {
     
 }
 
-
+func buttonDisabled() {
+    
+}
 
 
 

@@ -9,22 +9,16 @@ import SwiftUI
 
 struct TextView: View {
     
-   @Binding var currentText: String
+    @Binding var currentText: String
     
     var body: some View {
-        
         Group {
-            
-            if currentText.count <= 3 {
-                Text(currentText)
-                    .foregroundColor(.red)
-            } else {
-                Text(currentText)
-                    .foregroundColor(.blue)
-            }
+            Text("\(currentText.count)")
+                .foregroundColor(currentText.count <= 2 ? .red : .blue )
         }
     }
 }
+
 
 struct TextView_Previews: PreviewProvider {
     static var previews: some View {

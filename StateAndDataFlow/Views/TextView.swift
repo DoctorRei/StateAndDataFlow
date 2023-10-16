@@ -14,7 +14,7 @@ struct TextView: View {
     var body: some View {
         Group {
             Text("\(currentText.count <= 0 ? "" : "\(currentText.count)")")
-                .foregroundColor( currentText.count <= 2 ? .red : .blue )
+                .foregroundColor( currentText.count <= 2 ? .red : .green )
         }
     }
 }

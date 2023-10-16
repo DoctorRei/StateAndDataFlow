@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class UserSettings: ObservableObject {
     @Published var isLoggedIn = false
-    var name = ""
+    @AppStorage("username") var username: String = ""
 }
